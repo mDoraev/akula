@@ -1,0 +1,5 @@
+@media screen and (-ms-high-contrast: none), (min-width: 1020px){
+*::-ms-backdrop, [class^='block-3_row-2_box'][class$='1'] {
+ margin-right: -40px;
+}
+}

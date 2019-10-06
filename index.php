@@ -12,7 +12,7 @@ $scripts = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/templates/scripts.html'
 ob_start();
  ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 		<?php echo($head) ?>
 </head>
