@@ -1,0 +1,486 @@
+@import variables.sass
+
+@font-face 
+  font-family: OpenSans
+  src: url('../fonts/OpenSans-Regular.ttf')  format('truetype')
+  font-weight: normal
+  font-style: normal
+@font-face 
+  font-family: OpenSans
+  src: url('../fonts/OpenSans-Bold.ttf')  format('truetype')
+  font-weight: bold
+  font-style: normal
+@font-face 
+  font-family: OpenSans
+  src: url('../fonts/OpenSans-Light.ttf')  format('truetype')
+  font-weight: 300
+  font-style: normal
+
+body
+	font-family: $font
+	font-size: 14px
+
+h2
+	font-size: captFS
+
+textarea:focus::-webkit-input-placeholder
+ 	color: transparent
+
+textarea:focus::-moz-placeholder
+ 	color: transparent
+
+textarea:focus:-moz-placeholder
+ 	color: transparent
+
+textarea:focus:-ms-input-placeholder
+ 	color: transparent
+
+input:focus::-webkit-input-placeholder
+ 	color: transparent
+
+input:focus::-moz-placeholder
+ 	color: transparent
+
+input:focus:-moz-placeholder
+ 	color: transparent
+
+input:focus:-ms-input-placeholder
+ 	color: transparent
+
+textarea::-webkit-input-placeholder
+ 	color: $gray
+
+textarea::-moz-placeholder
+ 	color: $gray
+
+textarea:-moz-placeholder
+ 	color: $gray
+
+textarea:-ms-input-placeholder
+ 	color: $gray
+
+input::-webkit-input-placeholder
+ 	color: $gray
+
+input::-moz-placeholder
+ 	color: $gray
+
+input:-moz-placeholder
+ 	color: $gray
+
+input:-ms-input-placeholder
+ 	color: $gray
+
+.block
+	position: relative
+	overflow: hidden
+	width: 100%
+
+.block-dark
+	color: $white
+	background-color: $black
+
+.block-white
+	color: $black
+	background-color: $white
+
+.block_h1
+	font-size: $captFS
+	font-weight: bold
+	line-height: 60px
+	span
+		color: $blue
+
+.block-1
+	padding-top: 120px
+	padding-bottom: 100px
+	background-image: url('../images/bg.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center top
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	flex-wrap: wrap
+	min-height: 100vh
+
+.block_header
+	position: absolute
+	top: 83px
+	left: 230px
+
+.block-1_p
+	font-size: 24px
+	color: $gray
+	width: 100%
+	padding: 30px 0
+
+.block_btn
+	padding: 20px 28px
+	font-size: 18px
+	color: #fff
+	border: #fff solid 2px
+	border-radius: 45px
+	background: none
+	margin: 10px
+	min-width: 196px
+	text-transform: uppercase
+	&:hover
+		color: $blue
+		border-color: $blue
+
+.block_scroll-btn
+	background: none
+	border: none
+	position: absolute
+	bottom: 44px
+
+.block-2
+	background-image: url('../images/commas.jpg')
+	background-repeat: no-repeat
+	background-position: 53.5% 130px
+	padding-bottom: 140px
+	.block_container
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+.block_container
+	width: 1200px
+	max-width: 100%
+	margin: 0 auto
+	position: relative
+
+.block_container_bg
+	position: absolute
+	font-weight: 800
+	font-size: 48px
+	line-height: 65px
+	color: #F9F9F9
+	bottom: -30px
+	left: 22%
+
+.block_container_top
+	font-weight: bold
+	text-transform: uppercase
+	margin: 65px 10px 100px 10px
+	width: 100%
+	&:before
+		content: ''
+		display: block
+		width: 20px
+		height: 2px
+		background-color: $blue
+		float: left
+		margin-right: -10px
+		margin-bottom: -10px
+		margin-top: 10px
+
+.block_container_left
+	font-weight: 300
+	line-height: 25px
+	text-align: justify
+	// width: 46.4%
+	width: 48%
+	max-width: 510px
+	position: relative
+	text-indent: 40px
+
+.block_container_right
+	text-align: center
+	letter-spacing: 0.05em
+	text-transform: uppercase
+	width: 48%
+	position: relative
+
+.b_c_r_big
+	font-size: 36px
+	line-height: 49px
+
+.b_c_r_small
+	font-size: 24px
+	line-height: 45px
+	span
+		font-weight: bold
+
+.block-3
+	min-height: 100vh
+	padding-bottom: 200px
+
+.block_title
+	color: $gray
+	font-weight: bold
+	font-size: 18px
+	line-height: 25px
+	margin-bottom: 20px
+
+.block-3_text
+	color: $gray
+	line-height: 20px
+
+
+.block-3_row-1
+	display: flex
+	margin-left: 240px
+
+.block-3_row-2
+    position: relative
+    width: 1085px
+    height: 250px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.block-3_row-3
+	display: flex
+	margin-left: 355px
+	margin-top: 15px
+
+.block-3_layout
+	padding-left: 50px
+
+[class^="block-3_row-1_box"]
+
+		&[class$="1"]
+			width: 188px
+
+		&[class$="2"]
+			width: 210px
+			margin-left: 40px
+			margin-right: 30px
+		&[class$="3"]
+			width: 224px
+
+[class^="block-3_row-2_box"]
+
+		width: 80px
+		height: 80px
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		&[class$="1"]
+			display: block
+			width: 140px
+			height: auto
+			border-radius: 0
+			font-weight: bold
+			margin-bottom: -10px
+
+		&[class$="bg"]
+			display: block
+			width: 713px
+			height: 328px
+			height: auto
+			border-radius: 0
+			position: absolute
+			left: 155px
+			top: -35px
+
+		&[class$="bg-mobile"]
+			display: none
+
+		&[class$="2"]
+			background-color: #212121
+			
+		&[class$="3"]
+			background-color: #363535
+			img
+				position: relative
+				top: 1px
+
+		&[class$="4"]
+			background-color: #525050
+			position: relative
+			right: 2px
+			img
+				position: relative
+				bottom: 3px
+
+		&[class$="5"]
+			background-color: #6F6F6F
+			position: relative
+			right: 2px
+			img
+				position: relative
+				top: 4px
+	
+		&[class$="6"]
+			background-color: #828181
+			position: relative
+			right: 3px
+
+		&[class$="7"]
+			background-color: #B1ADAD
+			position: relative
+			right: 4px
+			
+		&[class$="8"]
+			border-radius: 0
+			height: auto
+			width: 200px
+			font-weight: bold
+			margin-bottom: -10px
+			
+			
+
+[class^="block-3_row-3_box"]
+		
+		&[class$="1"]
+			width: 197px
+			
+		&[class$="2"]
+			width: 220px
+			margin-left: 30px
+			margin-right: 15px
+			margin-top: 15px
+			
+		&[class$="3"]
+			width: 263px
+			
+.block-4
+	padding-bottom: 70px
+.block_h2
+	font-weight: bold
+	font-size: 48px
+	line-height: 65px
+	text-align: center
+	padding-top: 50px
+
+.block_ul
+	display: flex
+	justify-content: center
+	font-size: 18px
+	overflow: hidden
+	margin-bottom: 45px
+	list-style: none
+
+	li
+		line-height: 25px
+		margin: 10px 50px
+		cursor: pointer
+		display: block
+		border-bottom: transparent solid 2px
+		&:hover
+			color: $blue
+		&.js-block_ul_active
+			border-color: $blue
+
+.owl-carousel.block_carousel
+	display: none
+	&.js-block_carousel-active
+		display: block
+	.owl-nav
+		width: 100%
+		position: absolute
+		top: 48%
+		button
+			width: 62px
+			height: 12px
+			position: absolute
+			&:hover
+				opacity: 0.5
+				transition: opacity 0.7s
+			&.owl-prev
+				left: -100px
+				background-image: url('../images/arrow-left_normal.svg')
+
+			&.owl-next
+				right: -100px
+				background-image: url('../images/arrow-right_normal.svg')
+			&.disabled
+				opacity: 0.4
+			span
+				font-size: 0
+
+.block_carousel_slide
+	height: 378px
+	background-color: #c4c4c4
+	display: flex
+	justify-content: center
+	align-items: center
+	img
+		max-width: 50%
+
+.form
+	width: 820px
+	max-width: 100%
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	margin-top: 100px
+	margin-bottom: 100px
+	input.input-text,
+	textarea
+		border: 1px solid #464242
+		box-sizing: border-box
+		border-radius: 10px
+		font-size: 20px
+		line-height: 27px
+		// max-width: 100%
+		color: $gray
+		background-color: inherit
+	input.input-text
+		// width: 292px
+		width: 100%
+		height: 45px
+		margin-bottom: 22px
+		padding-left: 10px
+
+	textarea
+		// width: 480px
+		width: 100%
+		height: 180px
+		padding-left: 15px
+		padding-top: 10px
+.form_left
+	width: 292px
+.form_right
+	width: 480px
+.form_full
+	width: 100%
+	text-align: center
+	margin-bottom: 20px
+.form_file-box
+	float: right
+	width: 410px
+	button
+		width: 41px
+		height: 41px
+		line-height: 41px
+		border: $blue solid 2px
+		border-radius: 50%
+		background-color: inherit
+		text-align: center
+		padding: 0
+		position: relative
+		&:before
+			content: '+'
+			font-size: 25px
+			line-height: 38px
+		&:after
+			content: 'ЗАГРУЗИТЬ ФАЙЛЫ'
+			font-size: 18px
+			line-height: 25px
+			margin-left: 10px
+			position: absolute
+			left: 40px	
+			top: 6px
+			white-space: nowrap
+		&:hover
+			color: $blue
+	input[type="file"]
+		visibility: hidden
+		position: absolute
+		height: 0
+		width: 0
+		&.js-form_file-box_input-ok
+			& + button
+				&:before
+					content: '\2714'
+					color: $blue
+				&:after
+					content: 'ЗАГРУЖЕНО'
+	
